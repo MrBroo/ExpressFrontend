@@ -1,7 +1,6 @@
 import { message } from "antd";
 import { instance } from "../utils/axios";
 import { getErrorMessage } from "../utils/utils";
-const jwtToken = localStorage.getItem("token");
 
 export const SIGN_UP = async (user) => {
   try {
@@ -17,9 +16,7 @@ export const SIGN_IN = async (user) => {
   try {
     const { data } = await instance.post("/auth/login", {
       user,
-      headers: {
-        Authorization: `Bearer ${jwtToken}`,
-      },
+      headers: {},
     });
     return data;
   } catch (error) {

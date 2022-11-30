@@ -1,8 +1,10 @@
 import axios from "axios";
-console.log("token");
+const jwtToken = localStorage.getItem("token");
+
 export const instance = axios.create({
   baseURL: "https://abroranvarovtask4.herokuapp.com/",
   headers: {
+    Authorization: `Bearer ${jwtToken}`,
     "Access-Control-Allow-Origin": "*",
     "Content-Type": "application/json",
     Accept: "application/json",
