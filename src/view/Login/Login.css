@@ -1,0 +1,77 @@
+.login__inner {
+  display: flex;
+}
+.login__inner__right {
+  background-image: url("../../assets/login.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 50vw;
+}
+
+.login__inner__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 100vh;
+  width: 50vw;
+}
+
+.login__inner__left h1 {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.login__inner__left > p {
+  margin-top: 10px;
+  margin-bottom: 45px;
+  font-size: 18px;
+}
+
+.login__inner__left form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+}
+
+.ant-form-item .ant-form-item-label > label {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.login__inner__left input {
+  padding: 9px 11px;
+  border: 1px solid #ccc !important;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: none !important;
+}
+
+.login__inner__left button {
+  width: 100%;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fed602;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login__inner__left button:active {
+  background-color: #fed402c9;
+}
+
+.login__inner__left__register {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.login__inner__left__register a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #fed602;
+}

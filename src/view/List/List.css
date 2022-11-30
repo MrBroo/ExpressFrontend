@@ -1,0 +1,32 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.list-btn-group {
+  margin: 25px 0px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block {
+  padding: 5px 9px;
+  border-radius: 8px;
+  color: #FFA043;
+  background-color: rgba(255, 160, 67, 0.1);
+}
+
+.active {
+  padding: 5px 8px;
+  border-radius: 8px;
+  color: #2b45db;
+  background-color: rgba(85, 66, 246, 0.1);
+}
+
+.ant-table-row {
+  background-color: #f1f1f1;
+}
