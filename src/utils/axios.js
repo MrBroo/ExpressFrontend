@@ -1,7 +1,7 @@
 import axios from "axios";
 console.log("token");
 export const instance = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "https://abroranvarovtask4.herokuapp.com/",
   headers: {
     "Access-Control-Allow-Origin": "*",
     "Content-Type": "application/json",
