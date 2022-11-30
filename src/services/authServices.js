@@ -14,10 +14,7 @@ export const SIGN_UP = async (user) => {
 
 export const SIGN_IN = async (user) => {
   try {
-    const { data } = await instance.post("/auth/login", {
-      user,
-      headers: {},
-    });
+    const { data } = await instance.post("/auth/login", user);
     return data;
   } catch (error) {
     console.log(error);
